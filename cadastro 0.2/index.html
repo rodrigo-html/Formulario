@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            color: white;
+        }
+        body{
+            background-image: linear-gradient(to right, rgb(0,0,83), rgb(0,0,160));
+            display: flex;
+            justify-content: center;
+        }
+        .box{
+            width: 40%;
+            position: absolute;
+            background-color: rgb(0,0,0,0.7);
+            padding: 8px;
+            border-radius: 11px;
+        }
+        fieldset{
+            border: 3px solid rgb(19, 0, 185);
+        }
+        legend{
+            text-align: center;
+            background-color: dodgerblue;
+            padding: 7px;
+            border-radius: 6px;
+            box-shadow: 0px 0px 8px rgba(107, 181, 255, 0.795);
+        }
+        .labelInput{
+            position: absolute;
+            left: 15px;
+            top: -7px;
+        }
+        .inputBox{
+            position: relative;
+            padding: 15px;
+        }
+        .inputUser{
+            width: 100%;
+            outline: none;
+            color: black;
+        }
+        #submit{
+            background-image: linear-gradient(to right, rgb(0,0,83), rgb(0,0,160));
+            border: none;
+            padding: 7px;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <form action="#">
+            <fieldset>
+                <legend>Cadstro</legend>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser">
+                    <label for="nome" class="labelInput">Nome:</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser">
+                    <label for="email" class="labelInput">Email:</label>
+                </div>
+
+                <p>Sexo:</p>
+                <input type="radio" name="sexo" id="feminino">
+                <label for="feminino">Feminino</label>
+                <br><br>
+                <input type="radio" name="sexo" id="masculino">
+                <label for="masculino">Masculino</label>
+                <br><br>
+                <p></p>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser">
+                    <label for="senha" class="labelInput">Senha:</label>
+                </div>
+                <br>
+                <input type="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
